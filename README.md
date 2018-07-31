@@ -2,7 +2,7 @@
 
 [![NPM](https://nodei.co/npm/react-foreach.png?downloads=true&stars=true)](https://nodei.co/npm/react-foreach/)
 
-A React component to render each element of collection using function as child component.
+A React component that renders each element of collection using a function as child component.
 
 ## Installation
 

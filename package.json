@@ -1,7 +1,7 @@
 {
   "name": "react-foreach",
   "version": "0.1.0",
-  "description": "A React component to render each element of collection using function as child component.",
+  "description": "A React component that renders each element of collection using a function as child component."
   "main": "lib/index.js",
   "files": [
     "lib"
@@ -10,7 +10,6 @@
     "prepublish": "npm run lint && npm test && npm run clean && npm run build",
     "build": "babel --out-dir ./lib ./src",
     "clean": "rm -f lib/*",
-    "demo": "http-server -p 8000 docs/",
     "lint": "eslint ./src ./test",
     "test": "tap test/*.js --node-arg=--require --node-arg=babel-register --node-arg=--require --node-arg=babel-polyfill",
     "coveralls": "tap test/*.js --coverage --coverage-report=text-lcov --nyc-arg=--require --nyc-arg=babel-register --nyc-arg=--require --nyc-arg=babel-polyfill | coveralls"
