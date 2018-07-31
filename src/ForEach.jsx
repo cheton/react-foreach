@@ -1,5 +1,6 @@
 import ensureArray from 'ensure-array';
 import PropTypes from 'prop-types';
+import React from 'react';
 
 const ForEach = ({ items, children: render }) => {
     items = ensureArray(items);
@@ -8,7 +9,13 @@ const ForEach = ({ items, children: render }) => {
         render = (value) => null;
     }
 
-    return items.map((value, index, array) => render(value, index, array));
+    const Wrapper = React.Fragment || 'div';
+
+    return (
+        <Wrapper>
+            {items.map((value, index, array) => render(value, index, array))}
+        </Wrapper>
+    );
 };
 
 ForEach.propTypes = {
