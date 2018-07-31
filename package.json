@@ -1,7 +1,7 @@
 {
   "name": "react-foreach",
   "version": "0.1.0",
-  "description": "A React component that renders each element of collection using a function as child component."
+  "description": "A React component that renders each element of collection using a function as child component.",
   "main": "lib/index.js",
   "files": [
     "lib"
